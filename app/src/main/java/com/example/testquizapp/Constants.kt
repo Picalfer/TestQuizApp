@@ -35,7 +35,7 @@ object Constants {
 
         questionsList.add(que3)
 
-        // 4
+        /*// 4
         val que4 = Question(
             4, "What country does this flag belong to?",
             R.drawable.ic_flag_of_belgium,
@@ -101,9 +101,9 @@ object Constants {
             R.drawable.ic_flag_of_kuwait,
             "Kuwait", "Jordan",
             "Sudan", "Palestine", 1
-        )
+        )*/
 
-        questionsList.add(que10)
+        //questionsList.add(que10)
 
 
         return questionsList

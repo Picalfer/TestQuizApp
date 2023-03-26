@@ -55,8 +55,8 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:hint="Name">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_name"
@@ -64,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
                     android:textColor="#444444"
-                    android:textColorHint="#636363"/>
+                    android:textColorHint="#636363" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

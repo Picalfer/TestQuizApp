@@ -12,10 +12,15 @@
         android:theme="@style/Theme.TestQuizApp"
         tools:targetApi="31">
         <activity
+            android:name=".ResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarThemeFullScreen" />
+        <activity
             android:name=".QuizQuestionsActivity"
             android:exported="false"
-            android:theme="@style/NoActionBarThemeFullScreen"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarThemeFullScreen" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
