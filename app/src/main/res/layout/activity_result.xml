@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_bg"
+    android:weightSum="10"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="20dp"
@@ -16,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="Result"
-        android:textColor="@color/white"
+        android:textColor="#000000"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -28,35 +29,52 @@
         android:contentDescription="image"
         android:src="@drawable/ic_trophy" />
 
-    <TextView
-        android:id="@+id/tv_congratulations"
+    <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Congratulations!"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:layout_height="240dp"
+        app:cardCornerRadius="5dp"
+        android:layout_weight="4">
 
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        tools:text="Username" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="#D0000000"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textColor="#D1CFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        tools:text="Your score is 9 out of 10" />
+            <TextView
+                android:id="@+id/tv_congratulations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Congratulations!"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="Username" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#D1CFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Your score is 9 out of 10" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/btn_submit"
@@ -64,8 +82,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="#F3C184"
-        android:text="FINSH"
-        android:textColor="#FFD7BE"
+        android:text="FINISH"
+        android:textColor="#4E1E00"
         android:textSize="18sp"
         android:textStyle="bold" />
 
