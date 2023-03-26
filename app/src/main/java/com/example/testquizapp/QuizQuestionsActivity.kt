@@ -83,6 +83,7 @@ class QuizQuestionsActivity : AppCompatActivity(), OnClickListener {
         for (option in options) {
             option.setTextColor(Color.parseColor("#7a8089"))
             option.typeface = Typeface.DEFAULT
+            option.isClickable = true
             option.background = ContextCompat.getDrawable(
                 this,
                 R.drawable.default_option_border_bg
@@ -91,6 +92,13 @@ class QuizQuestionsActivity : AppCompatActivity(), OnClickListener {
     }
 
     override fun onClick(v: View?) {
+        binding.apply {
+            tvOptionOne.isClickable = false
+            tvOptionTwo.isClickable = false
+            tvOptionThree.isClickable = false
+            tvOptionFour.isClickable = false
+        }
+
         when (v?.id) {
             R.id.tv_option_one -> {
                 selectedOptionView(binding.tvOptionOne, 1)
