@@ -85,8 +85,7 @@ class QuizQuestionsActivity : AppCompatActivity(), OnClickListener {
             option.typeface = Typeface.DEFAULT
             option.isClickable = true
             option.background = ContextCompat.getDrawable(
-                this,
-                R.drawable.default_option_border_bg
+                this, R.drawable.default_option_border_bg
             )
         }
     }
@@ -173,8 +172,7 @@ class QuizQuestionsActivity : AppCompatActivity(), OnClickListener {
         tv.setTextColor(Color.parseColor("#363a43"))
         tv.setTypeface(tv.typeface, Typeface.BOLD)
         tv.background = ContextCompat.getDrawable(
-            this,
-            R.drawable.selected_option_border_bg
+            this, R.drawable.selected_option_border_bg
         )
     }
 }
