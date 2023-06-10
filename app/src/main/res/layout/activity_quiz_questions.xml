@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:gravity="center"
-            android:text="What country does this flag belong to?"
+            android:text="@string/question_text"
             android:textColor="#363a43"
             android:textSize="22sp" />
 
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="0/10"
+                tools:text="0/10"
                 android:textColorHint="#7a8089"
                 android:textSize="14sp" />
 
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="#F3C184"
-            android:text="SUBMIT"
+            android:text="@string/submit_btn_text"
             android:textColor="#503625"
             android:textSize="18sp"
             android:textStyle="bold" />

@@ -3,7 +3,6 @@ package com.example.testquizapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import com.example.testquizapp.databinding.ActivityMainBinding
 

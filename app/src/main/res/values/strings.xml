@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TestQuizApp</string>
+    <string name="question_text">What country does this flag belong to?</string>
+    <string name="submit_btn_text">SUBMIT</string>
 </resources>
