@@ -1,5 +1,14 @@
 <resources>
-    <string name="app_name">TestQuizApp</string>
+    <string name="app_name">Countries Quiz</string>
     <string name="question_text">What country does this flag belong to?</string>
     <string name="submit_btn_text">SUBMIT</string>
+    <string name="welcome">Welcome</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="name">Name</string>
+    <string name="start">Start</string>
+    <string name="score_text">Your score is %d out of %d</string>
+    <string name="result">Result</string>
+    <string name="trophy">Trophy</string>
+    <string name="congratulations_text">Congratulations!</string>
+    <string name="finish">FINISH</string>
 </resources>

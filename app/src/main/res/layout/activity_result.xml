@@ -1,73 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_bg"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
     android:padding="20dp"
-    android:weightSum="10"
     tools:context=".ResultActivity">
 
     <TextView
         android:id="@+id/tv_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="Result"
+        android:layout_marginTop="20dp"
+        android:text="@string/result"
         android:textColor="#000000"
         android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iv_trophy"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
         android:layout_weight="6"
-        android:contentDescription="image"
-        android:src="@drawable/ic_trophy" />
+        android:contentDescription="@string/trophy"
+        android:src="@drawable/ic_trophy"
+        app:layout_constraintBottom_toTopOf="@+id/card_view_congrat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_congrat"
         android:layout_width="wrap_content"
-        android:layout_height="240dp"
+        android:layout_height="180dp"
         android:layout_weight="4"
-        app:cardCornerRadius="5dp">
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_trophy">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#D0000000"
-            android:gravity="center_horizontal"
+            android:gravity="center"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:weightSum="30">
 
             <TextView
                 android:id="@+id/tv_congratulations"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Congratulations!"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:text="@string/congratulations_text"
                 android:textColor="@color/white"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_name"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:textColor="@color/white"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textColor="@color/teal_200"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 tools:text="Username" />
 
             <TextView
                 android:id="@+id/tv_score"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_weight="10"
+                android:gravity="center"
                 android:textColor="#D1CFFF"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -82,9 +96,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="#F3C184"
-        android:text="FINISH"
+        android:text="@string/finish"
         android:textColor="#4E1E00"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="30dp" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

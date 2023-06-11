@@ -56,9 +56,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="15dp"
-                tools:text="0/10"
                 android:textColorHint="#7a8089"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                tools:text="0/10" />
 
         </LinearLayout>
 
@@ -120,7 +120,6 @@
             android:textColor="#503625"
             android:textSize="18sp"
             android:textStyle="bold" />
-
 
     </LinearLayout>
 
